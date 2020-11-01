@@ -9,12 +9,12 @@ bootstrapTokens:
       - authentication
 kind: InitConfiguration
 localAPIEndpoint:
-  - advertiseAddress: 192.168.66.211
-    bindPort: 6443
-  - advertiseAddress: 192.168.66.212
-    bindPort: 6443
-  - advertiseAddress: 192.168.66.213
-    bindPort: 6443
+  advertiseAddress: 192.168.66.211
+  bindPort: 6443
+  advertiseAddress: 192.168.66.212
+  bindPort: 6443
+  advertiseAddress: 192.168.66.213
+  bindPort: 6443
 nodeRegistration:
   criSocket: /var/run/dockershim.sock
   name: server01
