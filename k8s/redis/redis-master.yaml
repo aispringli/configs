@@ -90,7 +90,7 @@ spec:
       volumes:
         - name: data
           persistentVolumeClaim:
-          claimName: redis-pv-claim
+            claimName: redis-pv-claim
         - name: sys
           hostPath:
             path: /sys
