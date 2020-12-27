@@ -43,7 +43,7 @@ metadata:
   namespace: aispring
   name: postgresql-pv-claim
   labels:
-    app: redis
+    app: postgresql
 spec:
   storageClassName: rook-ceph-block
   accessModes:
