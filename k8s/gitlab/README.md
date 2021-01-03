@@ -9,6 +9,12 @@ kubectl create -f gitlab-config.yaml
 kubectl create -f gitlab-secret.yaml
 ```
 
+### PostgreSQL 设置 gitlab用户和数据库
+```console
+CREATE DATABASE gitlab;
+CREATE ROLE gitlab superuser PASSWORD '123456' login;
+```
+
 ### 部署实例
 ```console
 kubectl create -f gitlab-deployment.yaml

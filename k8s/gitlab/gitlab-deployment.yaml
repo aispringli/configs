@@ -104,11 +104,11 @@ spec:
                 secretKeyRef:
                   name: gitlab-pwd
                   key: redis-pwd
-          ports:
-            - name: http
-              containerPort: 80
-            - name: ssh
-              containerPort: 22
+          # ports:
+          #   - name: http
+          #     containerPort: 80
+          #   - name: ssh
+          #     containerPort: 22
           volumeMounts:
             - mountPath: /home/git/data
               name: gitlab-data
